@@ -1,0 +1,6 @@
+Objetos: son importantisimos para poder dibujar.
+
+Una funcion dentro de un objeto es un metodo
+
+un dato dentro de un objeto es un atributo
+
