@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Ciclos</title>
+		<script type="text/javascript">
+
+			var c, t, b;
+
+			function calcular(){
+				var numero  = Number(t.value);
+				//La funcion Number() de JS forza al tvalue a convertirse en numero
+				var calculo = 1;
+
+				/*
+				var n       = 1;
+				while(n <= numero)
+				{
+					calculo = calculo * n;
+					n++;
+				}
+				*/
+				for (var i = 1; i <= numero; i++) 
+				{
+					calculo = calculo * i;
+				}
+
+				c.innerHTML = calculo;
+			}
+
+			function inicio()
+			{
+				c = document.getElementById("caja");
+				t = document.getElementById("numero");
+				b = document.getElementById("boton");
+
+				b.addEventListener("click",calcular);
+
+				/*
+				var numeros  = 1;
+				var residuo;		
+
+				while(numeros <= 50)
+				{
+					residuo = numeros % 2;
+					if(residuo == 0)
+					{
+						c.innerHTML += " " + numeros;
+						//para meterle HTML a una variable se usa innerHTML
+						//con el = solamente se sustituye lo que tenga despues del signo con lo que este dentro del body, con el += se concatena la cadena nueva
+					}
+					numeros++;
+				} 
+				*/
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="numero"/>
+		<input type="button" id="boton" value="Enviar"/>
+		<div id="caja"></div>
+		<div> Otra caja</div>
+		<script type="text/javascript" id="numero">
+			inicio();
+			calcular();
+		</script>
+	</body>
+</html>
