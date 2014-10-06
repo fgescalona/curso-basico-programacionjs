@@ -1,0 +1,19 @@
+1.- Dibujar el poste
+2.- Determinar la palabra que voy a usar -> tamarindo
+3.- Pasos para ahorcar.
+	3.1.- Cabeza
+	3.2.- Torso.
+	3.3.- Brazos.
+	3.4.- Pies.
+	3.5.- Ojos muertos.
+4.- Elegir las letras.
+	Si la letra existe
+		la pongo 
+	de lo contrario
+		agrego un trazo al ahorcado
+	si ya dibuje al ahorcado completo
+		Perdí
+	Si adiviné completo 
+		Gané
+
+Programar se trata de resolver un problema muy grande y dividirlo en pedacitos pequeñitos.
